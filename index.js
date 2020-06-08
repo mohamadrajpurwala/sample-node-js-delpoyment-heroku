@@ -81,7 +81,7 @@ io.on("connection", socket => {
         if (user) {
             removeVisitor(socket);
             const payload = {
-                message: `${user.name} is connected`
+                message: `${user.name} is disconnected`
             };
             io.emit("disconnected", payload);
         }
